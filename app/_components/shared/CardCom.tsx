@@ -14,7 +14,7 @@ const CardCom = ({
   content,
 }: CardComProps) => {
   return (
-    <div className={`${span} ${rowSpan} ${bgCard} rounded-xl p-2 shadow-md`}>
+    <div className={`${span} ${rowSpan}  rounded-xl  shadow-md`}>
       {content && content}
     </div>
   );

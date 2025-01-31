@@ -1,5 +1,6 @@
 import React from "react";
 import CardCom from "./_components/shared/CardCom";
+import { DashList, NumColabDash, NumProjectsDash, UsuarioDash } from "./_components/projects";
 
 const page = () => {
   return (
@@ -8,21 +9,26 @@ const page = () => {
       <CardCom
         span="col-span-12 md:col-span-3"
         rowSpan="row-span-12 md:row-span-6"
+        // bgCard="bg-transparent"
+        content={<DashList />}
       />
       {/* numero de proyectos */}
       <CardCom
         span="col-span-4 md:col-span-3"
         rowSpan="row-span-12 md:row-span-2"
+        content={<NumProjectsDash />}
       />
       {/* numero de colaboradores */}
       <CardCom
         span="col-span-4 md:col-span-3"
         rowSpan="row-span-12 md:row-span-2"
+        content={<NumColabDash />}
       />
       {/* mi nombre */}
       <CardCom
         span="col-span-4 md:col-span-3"
         rowSpan="row-span-12 md:row-span-2"
+        content={<UsuarioDash />}
       />
       {/*  */}
       {/* grafica de actividades */}
